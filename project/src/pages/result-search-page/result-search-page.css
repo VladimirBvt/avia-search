@@ -1,0 +1,11 @@
+.search-page {
+    display: flex;
+}
+
+.filters-section {
+    width: 33%;
+}
+
+.results-section {
+    width: 67%;
+}
