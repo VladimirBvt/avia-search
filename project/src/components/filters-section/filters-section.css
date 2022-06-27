@@ -1,0 +1,42 @@
+.filters-section {
+
+}
+
+.filters-section__head {
+    height: 36px;
+    background-color: #D9D9D9;
+}
+
+.filters-section__main {
+    height: 442px;
+    padding-left: 21px;
+    margin: 35px 0 30px 0;
+}
+
+.filters-section__foot {
+    height: 144px;
+    background-color: #D9D9D9;
+}
+
+.filters-section__title {
+    margin: 0 0 18px 0;
+}
+
+.filters-section__filter {
+    margin-top: 44px;
+}
+
+.filters-section__price {
+    margin-top: 24px;
+}
+
+.filters-section__price-wrap {
+    margin-top: 17px;
+}
+.filters-section__company {
+    margin-top: 21px;
+}
+
+.min-price {
+    margin-left: 10px;
+}
