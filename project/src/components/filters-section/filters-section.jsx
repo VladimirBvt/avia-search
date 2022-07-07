@@ -39,8 +39,8 @@ export const FiltersSection = () => {
         <div className="filters-section__filter">
           <h3 className="filters-section__title">Фильтровать</h3>
           <div>
-            <input type="checkbox" id="one-change" defaultValue="one-change" />
-            <label htmlFor="one-change"> - 1 пересадка</label>
+            <input type="checkbox" id="one-stop" defaultValue="one-stop" />
+            <label htmlFor="one-stop"> - 1 пересадка</label>
           </div>
           <div>
             <input type="checkbox" id="non-stop" defaultValue="non-stop" />
@@ -62,7 +62,7 @@ export const FiltersSection = () => {
           <h3 className="filters-section__title">Авиакомпания</h3>
           <div>
             <input type="checkbox" id="one-change" value="one-change" />
-            <label htmlFor="one-change"> - Имя авиакомпании</label>
+            <label htmlFor="one-stop"> - Имя авиакомпании</label>
             <span className="min-price"> от PRICE</span>
           </div>
         </div>
