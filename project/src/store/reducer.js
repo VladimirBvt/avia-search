@@ -1,9 +1,9 @@
-import { flights } from "../mocks/mock";
+import { getFlights } from "../mocks/mock";
 import { configureStore, createReducer } from "@reduxjs/toolkit";
 import { showMore } from "./action";
 
 const initialState = {
-  flights: flights,
+  flights: getFlights(),
   flightsX: [
     { title: "t1", time: "tm1" },
     { title: "t2", time: "tm2" },
