@@ -1,13 +1,13 @@
 import { getFlights } from "../mocks/mock";
 import { configureStore, createReducer } from "@reduxjs/toolkit";
 import { showMore } from "./action";
-import { SORT } from "../consts";
+import { SORT } from "../const";
 
 const initialState = {
   flights: getFlights(),
-  flightsForRender: [],
+  flightsForRender: getFlights(),
   sort: SORT.ASCENDING_PRICE,
-  filter: "",
+  filter_stop: "",
   filter_price: {
     min: "",
     max: "",

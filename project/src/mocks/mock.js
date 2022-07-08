@@ -27,5 +27,3 @@ export const getFlights = () => {
     };
   });
 };
-
-console.log(getFlights());
