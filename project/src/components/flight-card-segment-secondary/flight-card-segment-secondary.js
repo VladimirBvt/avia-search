@@ -3,26 +3,29 @@ import {
   getFormattedDate,
   getFormattedTime,
   formatDuration,
+  getDataAdaptation,
 } from "../../utils/utils";
 import { TransferInfo } from "../transfer-info/transfer-info";
 
-export const FlightCardSegment = (props) => {
+export const FlightCardSegmentSecondary = (props) => {
+  const {
+    departureCity,
+    departureAirportUid,
+    arrivalCity,
+    arrivalAirport,
+    arrivalAirportUid,
+  } = getDataAdaptation(props.segment);
+
   return (
     <div className="flight-card__segment">
       <div className="flight-card__segment-route">
-        {props.segment.departureCity.caption},{" "}
-        {props.segment.departureAirport.caption}{" "}
+        {departureCity}{" "}
         <span className="flight-card__segment--color">
-          ({props.segment.departureAirport.uid})
+          ({departureAirportUid})
         </span>{" "}
-        &#8594;
-        {props.segment.arrivalCity.caption ===
-        props.segment.arrivalAirport.caption
-          ? props.segment.arrivalCity.caption
-          : `${props.segment.arrivalCity.caption} 
-        ${props.segment.arrivalAirport.caption}`}{" "}
+        &#8594; {arrivalCity} {arrivalAirport}
         <span className="flight-card__segment--color">
-          ({props.segment.arrivalAirport.uid})
+          ({arrivalAirportUid})
         </span>
       </div>
       <div className="border-gray"></div>
