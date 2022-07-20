@@ -3,7 +3,6 @@ import { FlightCardHeader } from "../flight-card-header/flight-card-header";
 import { FlightCardSegmentSecondary } from "../flight-card-segment-secondary/flight-card-segment-secondary";
 
 export const FlightCard = ({ flight }) => {
-  //console.log(flight);
   if (!flight.routes) {
     return <div>Loading...</div>;
   }

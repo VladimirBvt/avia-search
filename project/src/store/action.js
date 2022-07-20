@@ -2,6 +2,10 @@ import { createAction } from "@reduxjs/toolkit";
 
 export const getData = createAction("getData");
 
+export const addFilterAirlines = createAction("addFilterAirlines");
+
+export const deleteFilterAirlines = createAction("deleteFilterAirlines");
+
 export const sortAscendingPrice = createAction("sortAscendingPrice"); // сортировка по возрастанию цены
 
 export const sortDescendingPrice = createAction("sortDescendingPrice"); // сортировка по убыванию цены

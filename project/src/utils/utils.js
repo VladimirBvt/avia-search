@@ -57,6 +57,7 @@ export const getFormattedTime = (date) => {
 export const getDataAdaptation = (segment) => {
   return {
     departureCity: segment.arrivalCity.caption,
+    departureAirport: segment.arrivalAirport.caption,
     departureAirportUid: segment.arrivalAirport.uid,
     arrivalCity: segment.departureCity.caption,
     arrivalAirport: segment.departureAirport.caption,

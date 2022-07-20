@@ -10,6 +10,7 @@ import { TransferInfo } from "../transfer-info/transfer-info";
 export const FlightCardSegmentSecondary = (props) => {
   const {
     departureCity,
+    departureAirport,
     departureAirportUid,
     arrivalCity,
     arrivalAirport,
@@ -19,7 +20,10 @@ export const FlightCardSegmentSecondary = (props) => {
   return (
     <div className="flight-card__segment">
       <div className="flight-card__segment-route">
-        {departureCity}{" "}
+        {departureCity === departureAirport
+          ? departureCity
+          : `${departureCity} 
+        ${departureAirport}`}
         <span className="flight-card__segment--color">
           ({departureAirportUid})
         </span>{" "}
